@@ -1,0 +1,70 @@
+@media (max-width: 1220px) {
+    body {
+        background-color: #f44336;
+    }
+    /*Arrumando resoluções em telas de tamanhos diferentes*/
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        /*Cortar rolagem Horizontal*/
+        flex-wrap: wrap;
+        /*Alinhar o que estiver dentro do "container" "main" no centro*/
+        justify-content: center;
+        height: auto;
+        /*Desgrudar elementos*/
+        gap: 30px;
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        /*Um embaixo do outro*/
+        flex-direction: column;
+    }
+
+    .container .descicao {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .botao-trailer {
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        /*Altura da linha do texto*/
+        line-height: 30px;
+    }
+
+    /*#=id .=Class*/
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (max-width: 376px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }   
+}
